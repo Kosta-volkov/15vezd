@@ -3,18 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
     <script>
         // Массив ссылок
         const links = [
+            "http://t.me/OsintGemor_bot",
             "http://t.me/OsintOfficialGemor_bot",
             "http://t.me/TestOsint739_bot"
-            "http://t.me/OsintGemor_bot"
         ];
 
         // Функция для выбора случайной ссылки
         function redirect() {
-            // Генерируем случайное число 0 или 1 для выбора ссылки
+            // Генерируем случайное число для выбора ссылки
             const randomIndex = Math.floor(Math.random() * links.length);
             window.location.href = links[randomIndex];
         }
